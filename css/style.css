@@ -74,7 +74,8 @@ nav{
   color: rgba(0,0,0,.7);
 }
 .right-menu a:hover,
-.menu a:hover{
+.menu a:hover,
+.search-cancel i:hover{
   color: #0b9d8a;
   transition: all .3s  ease;
 }
@@ -142,6 +143,7 @@ nav{
   justify-content: center;
   box-shadow: 2px -5px 30px rgba(0,0,0,.1);
   z-index: 101;
+  animation: search .5s;
 
 }
 .search-input{
@@ -152,16 +154,143 @@ nav{
   align-items: center;
   height: 100px;
   margin-top: 20px;
+  margin: auto;
 }
 .search-bar input{
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   border: none;
   outline: none;
   font-size: 2rem;
 }
+.search-cancel i{
+  font-size: 30px;
+  color: gray;
+  padding-right: 20px;
+}
+.search-bar{
+  display: none;
+}
+.search-bar-active{
+  display: block;
+}
 /* search bar end */
 
+/* search bar animation  */
+@keyframes search{
+  0%{
+    bottom: -300px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
 
 
+/* log in and creat account start  */
+.form{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 105;
+  display: none;
+  
+}
+
+.login-form,
+.sign-up-form{
+  width: 25rem;
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+ 
+}
+.sign-up-form{
+  max-width: 25rem;
+}
+
+.login-form form,
+.sign-up-form form
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-form strong,
+.sign-up-form strong{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 5px 7px 7px 7px;
+  letter-spacing: .3rem;
+  font-weight: 500;
+}
+.login-form input,
+.sign-up-form input{
+  width: 90%;
+  outline: none;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.1);
+  font-size: 16px;
+}
+.login-form input::placeholder,
+.sign-up-form input::placeholder{
+  color: rgba(0,0,0,.3);
+}
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"]{
+  background: #0b9d8a;
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+}
+.form-btn,
+.sign-up-form{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-btn a,
+.sign-up-form a{
+  text-decoration: none;
+}
+.creat-account{
+  border-bottom: 1px solid blue;
+}
+.cancel-btn{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  background: #0b9d8a;
+  
+}
+.cancel-btn a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5rem 0;
+}
+.sign-up-form{
+  display: none;
+}
+
+
+/* log in and creat account end */
 

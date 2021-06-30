@@ -54,9 +54,9 @@
                 <!-- search ------ -->
             <div class="right-menu">
                 <!-- serch  -->
-                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="search-bar-click"><i class="fas fa-search"></i></a>
                 <!-- user  -->
-                <a href="#"><i class="fas fa-user"></i></a>
+                <a class="logIn" href="#"><i class="fas fa-user"></i></a>
                 <!-- shoping  cart  -->
                 <a href="#">
                     <i class="fas fa-shopping-cart">
@@ -77,9 +77,52 @@
             <!-- input  -->
             <input type="text" placeholder="Search for Product"/>
             <!-- cancel btn  -->
-            <a href="#" class="-search-cancel">
+            <a href="#" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
+        </div>
+    </div>
+
+    <!-- log in and creat account form ----------------------- -->
+    <div class="form">
+        <!-- log in  -->
+        <div class="login-form">
+            <!-- header  -->
+            <strong>Log In</strong>
+            <!-- log in inputs  -->
+            <form >
+                <input type="email" placeholder="example@gmail.com" required>
+                <input type="password" placeholder="password" required>
+                <input type="submit" value="Log In">
+
+            </form>
+            <!-- forgot password and creat account ---- -->
+            <div class="form-btn">
+                <a class="forgot" href="#">Fogot password ?</a>
+                <a class="creat-account" href="#">Creat an account.</a>
+            </div>
+            <div class="cancel-btn">
+                <a href="#">Cancel</a>
+            </div>
+        </div>
+        <div class="sign-up-form">
+            <!-- header  -->
+            <strong>sign up</strong>
+            <!-- log in inputs  -->
+            <form >
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="example@gmail.com" required>
+                <input type="password" placeholder="password" required>
+                <input type="submit" value="Sign up">
+
+            </form>
+            <!-- forgot password and creat account ---- -->
+            <div class="form-btn">
+                <a class="login-account" href="#">Already Have an Account?</a>
+            </div>
+            <div class="cancel-btn">
+                <a href="#">Cancel</a>
+            </div>
         </div>
     </div>
 
@@ -96,5 +139,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
+    <!-- script files ----- -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
