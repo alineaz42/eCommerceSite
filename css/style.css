@@ -201,6 +201,7 @@ nav{
   left: 0;
   z-index: 105;
   display: none;
+  animation: fade .1s;
   
 }
 
@@ -290,7 +291,67 @@ nav{
 .sign-up-form{
   display: none;
 }
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 
 /* log in and creat account end */
 
+/* carousel start */
+/* #carouselExampleControls{
+  z-index: 500;
+} */
+.custom-carousel{
+  position: relative;
+}
+.carousel-text{
+  max-width: 30rem;
+  border: 1px solid #0b9d8a;
+  margin-top: -100px;
+  z-index: 10000;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  padding: 1rem;
+  transition: all .3s ease-in-out;
+}
+.carousel-text:hover{
+  transform: scale(1.1);
+}
+.carousel-text h1 span{
+  color: #0b9d8a;
+}
+.carousel-text a{
+  text-decoration: none;
+  background: #0b9d8a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+/* carousel end */
+
+/* featured categories start */
+.feature-categories-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-categories-heading h1{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 1rem 1rem;
+  margin-top: .5rem;
+  color: #1b1919;
+  text-transform: uppercase;
+  border: 1px solid #e0e0e0;
+}
+
+/* featured categories end */
